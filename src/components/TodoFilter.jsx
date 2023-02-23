@@ -2,7 +2,7 @@ import React from "react";
 
 const TodoFilter = ({ filter, setFilter }) => {
   return (
-    <section className="transition-theme mx-4 mt-8 flex items-center justify-center gap-4 rounded-md bg-white p-4 dark:bg-[#393a4c]">
+    <section className="transition-theme mx-4 mt-8 flex items-center justify-center gap-4 rounded-md bg-white p-4 dark:bg-[#393a4c] sm:max-w-xl sm:mx-auto">
       <button
         onClick={() => setFilter("all")}
         className={`filter-text ${

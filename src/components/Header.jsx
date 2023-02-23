@@ -19,7 +19,7 @@ const Header = () => {
   }, [darkMode]);
 
   return (
-    <header className="flex items-center justify-between px-4 pt-8">
+    <header className="flex items-center justify-between px-4 pt-8 sm:max-w-xl sm:mx-auto sm:pt-12">
       <h1 className="select-none text-3xl font-bold tracking-[.75rem] text-white">
         TODO
       </h1>

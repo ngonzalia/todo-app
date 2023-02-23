@@ -24,7 +24,7 @@ const TodoCreate = ({ createTodo }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="transition-theme mx-4 mt-8 flex items-center rounded-md bg-white px-4 py-1 dark:bg-[#393a4c]"
+      className="transition-theme mx-4 mt-8 flex items-center rounded-md bg-white px-4 py-1 dark:bg-[#393a4c] sm:max-w-xl sm:mx-auto"
     >
       <button
         type="button"

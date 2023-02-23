@@ -92,7 +92,7 @@ function App() {
   };
 
   return (
-    <div className="App transition-theme min-h-screen bg-[#e4e5f1] bg-[url('./assets/images/bg-mobile-light.jpg')]  bg-[length:100%_200px] bg-top bg-no-repeat font-josefin dark:bg-[#161722] dark:bg-[url('./assets/images/bg-mobile-dark.jpg')]">
+    <div className="App transition-theme min-h-screen bg-[#e4e5f1] bg-mobile-light bg-[length:100%_200px] bg-top bg-no-repeat font-josefin dark:bg-[#161722] dark:bg-mobile-dark md:bg-desktop-light md:dark:bg-desktop-dark md:bg-[length:100%_300px]">
       <Header />
       <main>
         <TodoCreate createTodo={createTodo} />

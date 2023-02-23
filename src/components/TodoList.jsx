@@ -9,7 +9,7 @@ const TodoList = ({
   clearCompleted,
 }) => {
   return (
-    <section className="transition-theme mx-4 mt-8 flex flex-col rounded-md bg-white dark:bg-[#393a4c]">
+    <section className="transition-theme mx-4 mt-8 flex flex-col rounded-md bg-white dark:bg-[#393a4c] sm:max-w-xl sm:mx-auto">
       {todos.map((todo) => (
         <TodoItem
           key={todo.id}
