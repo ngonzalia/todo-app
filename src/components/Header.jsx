@@ -7,8 +7,8 @@ const initialStateDarkMode = localStorage.getItem("theme") === "dark";
 const Header = () => {
   const [darkMode, setdarkMode] = useState(initialStateDarkMode);
 
+  // Swtich dark mode on or off and render each time it's changed
   useEffect(() => {
-    // Swtich dark mode on or off and render each time it's changed
     if (darkMode) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
