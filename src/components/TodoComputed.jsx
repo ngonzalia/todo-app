@@ -1,6 +1,6 @@
 const TodoComputed = ({ todosNoCompleted, clearCompleted }) => {
   return (
-    <article className="transition-theme flex items-center justify-between gap-4 rounded-b-md bg-white p-4 dark:bg-[#393a4c]">
+    <article className="transition-theme flex items-center justify-between gap-4 rounded-md bg-white p-4 dark:bg-[#393a4c]">
       <p className="text-xs font-bold text-[#9394a5]">
         {todosNoCompleted} items left
       </p>

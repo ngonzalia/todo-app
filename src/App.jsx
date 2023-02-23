@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import TodoCreate from "./components/TodoCreate";
 import TodoList from "./components/TodoList";
 import TodoFilter from "./components/TodoFilter";
 
-const initialStateTodos = [
+const initialStateTodos = JSON.parse(localStorage.getItem("todos")) || [
   {
     id: 1,
     title: "Complete online JavaScript course",
@@ -40,18 +40,21 @@ const initialStateTodos = [
 function App() {
   const [todos, setTodos] = useState(initialStateTodos);
 
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
+
   const createTodo = (title, completed) => {
     setTodos([
       ...todos,
       {
-        id: todos.length + 1,
+        id: Date.now(),
         title: title.trim(),
         completed,
       },
     ]);
   };
 
-  // TAREA rehacerlo
   const toggleTodo = (id) => {
     setTodos(
       todos.map((todo) =>
